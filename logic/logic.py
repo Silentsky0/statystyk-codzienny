@@ -153,7 +153,8 @@ def download_forecast(type='daily'):
 
         if date_of_download != todays_date:
             # forecast data is outdated
-            print("Downloading new file: forecast_daily.json")
+            print(f'{datetime.now().date()} {datetime.now().hour}:{datetime.now().minute} <- downloading daily forecast data')
+            # print("Downloading new file: forecast_daily.json")
 
             with urllib.request.urlopen(
                     "http://dataservice.accuweather.com/forecasts/v1/daily/1day/275174?apikey"
@@ -171,7 +172,8 @@ def download_forecast(type='daily'):
 
         if date_of_download != todays_date:
             # forecast data is outdated
-            print("Downloading new file: forecast_12_hours.json")
+            # print("Downloading new file: forecast_12_hours.json")
+            print(f'{datetime.now().date()} {datetime.now().hour}:{datetime.now().minute} <- downloading 12-hour forecast data')
 
             with urllib.request.urlopen("http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/275174?apikey"
                                         "=GZcekJNnnT8F1qo8VJteym6lRa54mH2b&language=pl-pl&details=true&metric=true") \

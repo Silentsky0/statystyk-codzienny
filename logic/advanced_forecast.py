@@ -1,8 +1,7 @@
-import matplotlib as mp
 import numpy as np
 from matplotlib import pyplot as plt
 import matplotlib as mpl
-from scipy.interpolate import make_interp_spline, BSpline
+from scipy.interpolate import make_interp_spline
 
 INTERPOLATION_COEFFICIENT = 20
 
