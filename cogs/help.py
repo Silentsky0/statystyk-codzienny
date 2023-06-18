@@ -1,8 +1,7 @@
 import nextcord
-from nextcord import slash_command, SlashOption
+from nextcord import slash_command
 from nextcord.ext.commands import Cog, Bot
 
-from logic.logic import set_default_channel, unset_default_channel, get_default_channel
 from ui.message_templates import help_message_embed
 
 

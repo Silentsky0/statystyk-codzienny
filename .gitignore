@@ -3,3 +3,5 @@ __pycache__/
 venv/
 .idea/
 logo.png
+data/forecast*
+assets/generated_images/*
